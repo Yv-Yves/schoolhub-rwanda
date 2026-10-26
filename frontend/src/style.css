@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary-navy: #142B4A;
+  --secondary-navy: #1E3A8A;
+  --neon-green: #00FF66;
+  --bg-custom: #EEF2F7;
+}
+
+/* APP BACKGROUND TINT (NOT WHITE) */
+.app-background {
+  background-color: var(--bg-custom) !important;
+  min-height: 100vh;
+}
+
+body {
+  background-color: var(--bg-custom);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #334155;
+  margin: 0;
+  padding: 0;
+}
+
+/* HIGH VISIBILITY NEON GREEN STUDENT LOGIN BUTTON */
+.btn-student-glow {
+  background: var(--neon-green) !important;
+  color: #042F14 !important;
+  font-weight: 900 !important;
+  border: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 0 25px rgba(0, 255, 102, 0.6), 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-student-glow:hover {
+  background: #00E65C !important;
+  color: #000000 !important;
+  transform: translateY(-2px) scale(1.02) !important;
+  box-shadow: 0 0 35px rgba(0, 255, 102, 0.8), 0 6px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* PARENT GLOW BUTTON */
+.btn-parent-glow {
+  background: #10B981 !important;
+  color: #ffffff !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4) !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-parent-glow:hover {
+  background: #059669 !important;
+  transform: translateY(-2px) !important;
+}
+
+/* GLASSMORPHIC SLATE GRAY LOGIN CARD */
+.login-card-styled {
+  background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+}
+
+.icon-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* INPUT TEXT VISIBILITY (BRIGHT WHITE) */
+.custom-form-control {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  border-radius: 10px;
+  padding: 12px 16px;
+}
+
+.custom-form-control:focus {
+  background: rgba(255, 255, 255, 0.14) !important;
+  border-color: var(--neon-green) !important;
+  box-shadow: 0 0 15px rgba(0, 255, 102, 0.4) !important;
+  color: #ffffff !important;
+}
+
+.custom-form-control::placeholder {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+/* NAVIGATION & HERO */
+.navbar-custom {
+  background: #142B4A !important;
+  border-bottom: 2px solid rgba(56, 189, 248, 0.3);
+}
+
+.hero-bg {
+  background: linear-gradient(135deg, #142B4A 0%, #1E3A8A 60%, #0F172A 100%);
+  color: white;
+}
+
+.card-custom {
+  background: #ffffff;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.showcase-section {
+  background-color: #E6EDF5;
+}
+
+.hover-zoom {
+  transition: transform 0.4s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.08);
+}
